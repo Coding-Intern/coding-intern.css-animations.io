@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="scroll-watcher"></div>
+    <div id="left-box"></div>
+    <div id="right-box"></div>
+    <h1 id="title"><span id="css">CSS</span> Animations</h1>
+    <hr class="separator" />
+    <h2 id="subtitle">Animation Properties:</h2>
+    <h3>
+      CSS uses various animation properties for elements like horizontal lines,
+      such as animation-duration, animation-delay, animation-timing-function,
+      animation-name, animation-direction, animation-fill-mode,
+      animation-iteration-count, animation-play-state, and more, to create
+      perfect animations. Take the horizontal line as an example. The animation
+      name is set to, "line," the animation duration is set to 2 seconds, the
+      animation delay was is to 1 second. These three properties are indeed the
+      most important in creating animations.
+    </h3>
+    <br />
+    <h3>
+      For a visual representation of the CSS animation properties, click
+      <a href="#table">here</a>.
+    </h3>
+    <hr class="separator" , id="separator-2" />
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Value(s)</th>
+          <th colspan="2">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="property-names">animation-name</td>
+          <td>
+            <ul>
+              <li>none</li>
+              <li>&lt;custom-ident&gt;</li>
+            </ul>
+          </td>
+          <td>
+            Used to set a name for the animation in order to style it with the
+            @keyframes rule. It has an initial value of, "none."
+          </td>
+        </tr>
+        <tr>
+          <td class="property-names">animation-duration</td>
+          <td>
+            <ul>
+              <li>auto</li>
+              <li>time set in seconds(s) or milliseconds(ms)</li>
+            </ul>
+          </td>
+          <td>
+            Specifies the time it may take for the animation to complete. The
+            initial value is 0s.
+          </td>
+        </tr>
+        <tr>
+          <td class="property-names">animation-delay</td>
+          <td>
+            <ul>
+              <li>time set in seconds(s) or milliseconds(ms)</li>
+            </ul>
+          </td>
+          <td>
+            Specifies the delay between the animation load and the start of an
+            animation sequence. It's initial value is automatically set to 0s.
+          </td>
+        </tr>
+        <tr>
+          <td class="property-names">animation-timing-function</td>
+          <td>
+            <ul>
+              <li>&lt;easing-function&gt;</li>
+              <li>ease</li>
+              <li>linear</li>
+              <li>ease-in</li>
+              <li>ease-out</li>
+              <li>ease-in-out</li>
+              <li>cubic-bezier(p1, p2, p3, p4)</li>
+            </ul>
+          </td>
+          <td>
+            Defines how the values between the beginning and end of an animation
+            are calculated. It has an initial value of ease.
+          </td>
+        </tr>
+        <tr>
+          <td class="property-names">animation-iteration-count</td>
+          <td>
+            <ul>
+              <li>&lt;number&gt;</li>
+              <li>infinite</li>
+            </ul>
+          </td>
+          <td>
+            Specifies the number of times the animation sequence plays. It has
+            an initial value of 1.
+          </td>
+        </tr>
+        <tr>
+          <td class="property-names">animation-direction</td>
+          <td>
+            <ul>
+              <li>normal</li>
+              <li>reverse</li>
+              <li>alternate</li>
+              <li>alternate-reverse</li>
+            </ul>
+          </td>
+          <td>
+            Specifies if the animation should play forwards, backwards, or
+            alternate forwards and backwards relative to the
+            animation-iteration-count property. The initial value is set to the
+            keyword, normal.
+          </td>
+        </tr>
+        <tr>
+          <td>animation-play-state</td>
+          <td>
+            <ul>
+              <li>running</li>
+              <li>paused</li>
+            </ul>
+          </td>
+          <td>
+            Specifies wether an animation is running or not. It's initial value
+            is set to the, "running" keyword.
+          </td>
+        </tr>
+        <tr>
+          <td>animation-fill-mode</td>
+          <td>
+            <ul>
+              <li>forwards</li>
+              <li>backwards</li>
+              <li>both</li>
+            </ul>
+          </td>
+          <td>
+            Specifies how an animation applies styles to the object before and
+            after the execution. It's initial value is set to none.
+          </td>
+        </tr>
+        <tr>
+          <td>animation-timeline(experimental)</td>
+          <td>
+            <ul>
+              <li>none</li>
+              <li>auto</li>
+              <li>scroll()</li>
+              <li>view()</li>
+              <li>&lt;dashed-ident&gt;</li>
+            </ul>
+          </td>
+          <td>
+            Used to specify the timeline used to control the progression of an
+            animation. This expiremental property has an initial value of,
+            "auto".
+          </td>
+        </tr>
+        <tr>
+          <td>animation</td>
+          <td>
+            <ul>
+              <li>&lt;single-easing-function&gt;</li>
+              <li>&lt;single-animation-iteration-count&gt;</li>
+              <li>&lt;single-animation-direction&gt;</li>
+              <li>&lt;single-animation-fill-mode</li>
+              <li>&lt;single-animation-play-state&gt;</li>
+            </ul>
+          </td>
+          <td>
+            A shorthand property for the following animation properties:
+            <ul>
+              <li>animation-delay</li>
+              <li>animation-direction</li>
+              <li>animation-duration</li>
+              <li>animation-fill-mode</li>
+              <li>animation-iteration-count</li>
+              <li>animation-name</li>
+              <li>animation-play-state</li>
+              <li>animation-timeline(experimental and may not work)</li>
+              <li>animation-timing-function</li>
+            </ul>
+            . It is displayed in the following format: duration |
+            easing-function | delay | iteration-count | direction | fill mode |
+            play-state | name. It doesn't necessarily have a default (or
+            initial) value.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
