@@ -1,0 +1,111 @@
+html {
+  font-family: "Trispace";
+  font-weight: 300;
+  overflow: scroll;
+  }
+  
+h3 {
+   text-align: center;
+    }
+    
+table, th, td {
+  border: 2.5px solid black;
+  margin-left: 3000px;
+  justify-content: center;
+  border-color: darkslateblue;
+  }
+
+  table {
+  border: 100px solid deepskyblue;
+  border-bottom: 110px solid deepskyblue;
+  }
+      
+#title {
+  text-align: center;
+  text-shadow: 4px 2px 2px lightgray;
+  letter-spacing: normal;
+  }
+        
+#css {
+  animation-name: separate;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  }
+          
+@keyframes separate {
+  from {
+    letter-spacing: normal;
+    }
+    to {
+     letter-spacing: 5.5px;
+     }
+    }
+                
+#left-box {
+  background-color: deepskyblue;
+  float: left;
+  width: 50px;
+  height: 900px;
+  border: 2px ridge navy;
+  margin-left: 0px;
+  margin-right: 15px;
+  }
+                  
+#right-box {
+
+  background-color: deepskyblue;
+  float: right;
+  width: 50px;
+  height: 900px;
+  border: 2px ridge navy;
+  margin-left: 15px;
+  }
+                    
+.separator {
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  animation-name: line;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0.75;
+  }
+
+  #separator-2 {
+    margin-top: 75px;
+  }
+                      
+@keyframes line {
+  from {
+   height: 5px;
+   width: 5px;
+   }
+   to {
+    width: 250px;
+    color: #5C5C5C;
+    }
+  }
+                            
+  #subtitle {
+    text-align: center;
+    text-shadow: 4px 2px 2px lightgray;
+    margin-left: 15px;
+    }
+
+    a {
+      color: skyblue;
+      transition-property: all;
+      transition-duration: 1s;
+      transition-delay: 1s;
+      transition-timing-function: ease-in-out;
+    }
+
+    a:hover {
+      color: blue;
+   }
